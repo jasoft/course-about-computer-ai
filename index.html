@@ -16,10 +16,12 @@
         <div class="timeline">
             <div class="container left">
                 <div class="content">
-                    <span class="year">公元前2700年</span>
-                    <h2>算盘 (Abacus)</h2>
-                    <img src="images/abacus.jpg" alt="算盘" />
-                    <p>在电脑出现很久很久以前，人们用算盘来帮助计算。它就像一个古老的计算器！</p>
+                    <span class="year">约1200年</span>
+                    <h2>中国算盘 (Abacus)</h2>
+                    <img src="images/abacus.jpg" alt="中国算盘" />
+                    <p>
+                        中国算盘是我们祖先发明的伟大计算工具！大约在1200年左右，中国人就开始使用算盘来帮助计算。它就像一个古老的计算器，非常聪明！
+                    </p>
                 </div>
             </div>
             <div class="container right">
@@ -67,5 +69,42 @@
         <footer>
             <p>给四年级小朋友的礼物</p>
         </footer>
+
+        <!-- 图片全屏查看器 -->
+        <div class="image-modal" id="imageModal">
+            <div class="close-hint">点击任意位置关闭</div>
+            <img id="modalImage" src="" alt="放大图片" />
+        </div>
+
+        <script>
+            // 图片点击放大功能
+            const modal = document.getElementById("imageModal")
+            const modalImg = document.getElementById("modalImage")
+            const images = document.querySelectorAll(".content img")
+
+            // 为每张图片添加点击事件
+            images.forEach((img) => {
+                img.addEventListener("click", function () {
+                    modal.classList.add("active")
+                    modalImg.src = this.src
+                    modalImg.alt = this.alt
+                    document.body.style.overflow = "hidden" // 防止背景滚动
+                })
+            })
+
+            // 点击模态框关闭
+            modal.addEventListener("click", function () {
+                modal.classList.remove("active")
+                document.body.style.overflow = "auto" // 恢复滚动
+            })
+
+            // ESC键关闭
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && modal.classList.contains("active")) {
+                    modal.classList.remove("active")
+                    document.body.style.overflow = "auto"
+                }
+            })
+        </script>
     </body>
 </html>
