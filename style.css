@@ -1,23 +1,26 @@
 body {
     font-family: 'ZCOOL XiaoWei', sans-serif;
-    background-color: #f0f8ff; /* 淡蓝色背景 */
+    background-color: #f0f8ff;
+    /* 淡蓝色背景 */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4a90e2; /* 明亮的蓝色 */
+    background-color: #4a90e2;
+    /* 明亮的蓝色 */
     color: white;
     text-align: center;
     padding: 2rem 1rem;
-    border-bottom: 5px solid #f7c04a; /* 黄色边框 */
+    border-bottom: 5px solid #f7c04a;
+    /* 黄色边框 */
 }
 
 header h1 {
     margin: 0;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header p {
@@ -49,17 +52,19 @@ header p {
     position: relative;
     background-color: inherit;
     width: 50%;
+    box-sizing: border-box;
 }
 
 .left {
-    left: -25%;
+    left: 0;
 }
 
 .right {
-    left: 25%;
+    left: 50%;
 }
 
-.left::before, .right::before {
+.left::before,
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -88,7 +93,8 @@ header p {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #f7c04a; /* 黄色圆点 */
+    border: 4px solid #f7c04a;
+    /* 黄色圆点 */
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -107,7 +113,7 @@ header p {
     background-color: white;
     position: relative;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -118,6 +124,18 @@ header p {
 .content h2 {
     margin-top: 0;
     color: #4a90e2;
+}
+
+.content .year {
+    display: inline-block;
+    background-color: #f7c04a;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content img {
@@ -139,23 +157,29 @@ footer {
     .timeline::after {
         left: 31px;
     }
+
     .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
+
     .container::before {
         left: 60px;
         border: medium solid white;
         border-width: 15px 15px 15px 0;
         border-color: transparent white transparent transparent;
     }
-    .left::after, .right::after {
+
+    .left::after,
+    .right::after {
         left: 15px;
     }
+
     .left {
         left: 0%;
     }
+
     .right {
         left: 0%;
     }
