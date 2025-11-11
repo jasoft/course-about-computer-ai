@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Nunito', 'Orbitron', 'ZCOOL XiaoWei', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
     background-color: var(--bg);
     color: var(--text);
     margin: 0;
@@ -32,7 +32,6 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Orbitron', 'Nunito', sans-serif;
     letter-spacing: 0.04em;
 }
 
@@ -86,7 +85,7 @@ ol {
 }
 
 .logo {
-    font-family: 'Orbitron', 'ZCOOL XiaoWei', serif;
+    font-family: inherit;
     font-size: 1.9rem;
     letter-spacing: 0.08em;
 }
@@ -593,7 +592,7 @@ ol {
 }
 
 .lab code {
-    font-family: 'Nunito', monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
     background: rgba(15, 23, 42, 0.1);
     padding: 0.1rem 0.4rem;
     border-radius: 6px;
