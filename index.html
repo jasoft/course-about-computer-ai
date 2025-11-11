@@ -3,117 +3,551 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>电脑的奇妙历史</title>
+        <title>计算机小冒险站</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <h1>电脑的奇妙历史</h1>
-            <p>从古老的算盘到口袋里的智能手机</p>
+        <header class="hero student" id="home">
+            <nav class="site-nav">
+                <div class="logo">计算机小冒险</div>
+                <button class="nav-toggle" aria-label="展开导航">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#mission">今日任务</a></li>
+                    <li><a href="#timeline">时光穿梭</a></li>
+                    <li><a href="#earth">极速地球</a></li>
+                    <li><a href="#coding">编程游乐园</a></li>
+                    <li><a href="#ai-hub">AI 小百科</a></li>
+                    <li><a href="#lab">现场实验</a></li>
+                    <li><a href="#imagination">想象实验室</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <p class="eyebrow">欢迎登船 · 计算机星球正在等你探索</p>
+                <h1>你好，计算机！我们来一起玩、学、惊叹</h1>
+                <p class="lead">
+                    这个网站是专门给同学们看的互动展示：我们会穿越历史，操作炫酷的编程小游戏，跟人工智能聊天、画画、跳舞，看看计算机到底有多聪明。
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#mission">开始冒险</a>
+                    <a class="btn ghost" href="#lab">直达现场实验</a>
+                </div>
+                <div class="hero-stats">
+                    <article>
+                        <p class="stat-number">8</p>
+                        <p class="stat-label">环节等你解锁</p>
+                    </article>
+                    <article>
+                        <p class="stat-number">3</p>
+                        <p class="stat-label">AI 现场实验</p>
+                    </article>
+                    <article>
+                        <p class="stat-number">∞</p>
+                        <p class="stat-label">想象力能量</p>
+                    </article>
+                </div>
+            </div>
         </header>
+        <main>
+            <section id="mission" class="section highlight mission">
+                <div class="section-heading">
+                    <p class="eyebrow">今日任务</p>
+                    <h2>三大挑战，看看你能不能全部完成</h2>
+                    <p>把自己当成“计算机指挥官”：动动脑、动动手、动动嘴，一起让科技变得又好玩又有用。</p>
+                </div>
+                <div class="mission-grid">
+                    <article class="card mission-card">
+                        <div class="chip">任务 01</div>
+                        <h3>发现计算机的超级力量</h3>
+                        <p>观察生活里的各种"电脑"——手机、手表、智能音箱。它们在你的生活里扮演什么角色?</p>
+                        <ul>
+                            <li>找出至少 3 个隐藏的"计算机朋友"。</li>
+                            <li>回答:电脑会不会生气?为什么?</li>
+                        </ul>
+                    </article>
+                    <article class="card mission-card">
+                        <div class="chip">任务 02</div>
+                        <h3>动手玩编程游戏</h3>
+                        <p>亲自操作 Scratch、弹跳球,看看电脑怎么听指令、怎么一步步执行你的命令。</p>
+                        <ul>
+                            <li>让小猫跳舞或说话。</li>
+                            <li>控制小球的跳跃高度。</li>
+                            <li>理解顺序、判断、循环三大编程概念。</li>
+                        </ul>
+                    </article>
+                    <article class="card mission-card">
+                        <div class="chip">任务 03</div>
+                        <h3>体验 AI 的神奇能力</h3>
+                        <p>挑战 Quick Draw!、Teachable Machine、声音克隆,看看 AI 怎么通过学习变得越来越聪明。</p>
+                        <ul>
+                            <li>让 AI 猜出你画的图。</li>
+                            <li>训练 AI 识别你的动作。</li>
+                            <li>听听 AI 模仿你的声音。</li>
+                        </ul>
+                    </article>
+                    <article class="card mission-card">
+                        <div class="chip">任务 04</div>
+                        <h3>发明未来的计算机</h3>
+                        <p>在最后的想象实验室里,写下一句"我最想让电脑帮我做的事情",或者画出未来电脑的样子。</p>
+                        <ul>
+                            <li>可以是会飞的作业机器人。</li>
+                            <li>也可以是会唱歌的学习伙伴!</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
 
-        <div class="timeline">
-            <div class="container left">
-                <div class="content">
-                    <span class="year">约1200年</span>
-                    <h2>中国算盘 (Abacus)</h2>
-                    <img src="images/abacus.jpg" alt="中国算盘" />
+            <section id="timeline" class="section timeline-section">
+                <div class="section-heading">
+                    <p class="eyebrow">计算机时光穿梭机</p>
+                    <h2>从房间大小的 ENIAC，到口袋里的智能手机</h2>
+                    <p>点击每一张图片都可以放大，让你看清楚每个时代的“计算机颜值”。</p>
+                </div>
+                <div class="history-gallery">
+                    <article class="history-card" data-full-image="images/abacus.jpg">
+                        <img src="images/abacus.jpg" alt="算盘" />
+                        <div>
+                            <h3>算盘 · 约公元1200年</h3>
+                            <p>中国古老的“口袋计算器”，用珠子记数、加减乘除，是人类早期的信息处理工具。</p>
+                        </div>
+                    </article>
+                    <article class="history-card" data-full-image="images/jacquard_loom.jpg">
+                        <img src="images/jacquard_loom.jpg" alt="雅卡尔织布机" />
+                        <div>
+                            <h3>雅卡尔织布机 · 1804</h3>
+                            <p>通过打孔卡片控制花纹，是最早的“编程”概念——告诉机器按什么顺序执行指令。</p>
+                        </div>
+                    </article>
+                    <article class="history-card" data-full-image="images/eniac.jpg">
+                        <img src="images/eniac.jpg" alt="ENIAC" />
+                        <div>
+                            <h3>ENIAC · 1946</h3>
+                            <p>重达 30 吨，需要一间大教室才能放下，是第一台电子计算机。</p>
+                        </div>
+                    </article>
+                    <article class="history-card" data-full-image="images/transistor.jpg">
+                        <img src="images/transistor.jpg" alt="晶体管" />
+                        <div>
+                            <h3>晶体管 · 1947</h3>
+                            <p>晶体管就像超快的电子开关/放大器，控制电流“通或断”，让计算机能精确处理 0 和 1。</p>
+                        </div>
+                    </article>
+                    <article class="history-card" data-full-image="images/ibm_pc.jpg">
+                        <img src="images/ibm_pc.jpg" alt="IBM PC" />
+                        <div>
+                            <h3>IBM PC · 1981</h3>
+                            <p>电脑第一次走进普通家庭，大家可以在家里写作、画图、玩游戏。</p>
+                        </div>
+                    </article>
+                    <article class="history-card" data-full-image="images/macbook.jpg">
+                        <img src="images/macbook.jpg" alt="轻薄本" />
+                        <div>
+                            <h3>轻薄本 · 2008</h3>
+                            <p>又薄又轻，像一本书一样随身携带，从此学习和创作随时开启。</p>
+                        </div>
+                    </article>
+                    <article class="history-card" data-full-image="images/smartphone.jpg">
+                        <img src="images/smartphone.jpg" alt="智能手机" />
+                        <div>
+                            <h3>智能手机 · 现在</h3>
+                            <p>口袋里的超级计算机，比 ENIAC 快上几百万倍，还能拍照、导航、聊天。</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="fact-grid">
+                    <article class="card mini">
+                        <h3>神奇数字</h3>
+                        <ul>
+                            <li>1956 年的硬盘重 1 吨，只能存 5MB；现在的小卡片能存 128GB。</li>
+                            <li>你的手机比 1969 年登月任务用的所有电脑还要强。</li>
+                            <li>第一颗晶体管约指甲盖大小；今天一块芯片里可以塞进超 500 亿个晶体管，尺寸只有 5 纳米左右。</li>
+                            <li>全球联网人数：1989 年 &lt; 1000 人，现在 &gt; 50 亿人。</li>
+                        </ul>
+                    </article>
+                    <article class="card mini">
+                        <h3>思考题</h3>
+                        <ul>
+                            <li>为什么电脑可以越做越小？</li>
+                            <li>20 年后的电脑会是什么样子？</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="earth" class="section earth-adventure">
+                <div class="section-heading">
+                    <p class="eyebrow">第三部分 · 极速地球</p>
+                    <h2>Google Earth 证明：电脑真的“超级快”</h2>
+                    <p>我们飞越珠穆朗玛峰、金字塔和校园，用几秒钟感受计算机处理海量数据的速度。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>操作步骤</h3>
+                        <ol>
+                            <li>提前打开 <strong>earth.google.com</strong> 并加载地球。</li>
+                            <li>旋转 3D 地球，提醒大家“这不是视频，而是电脑即时计算”。</li>
+                            <li>让同学喊出想去的城市或地标，点击搜索按钮“瞬移”。</li>
+                        </ol>
+                    </article>
+                    <article class="card accent">
+                        <h3>学生任务</h3>
+                        <ul>
+                            <li>提名一个地点，观察地形颜色和建筑形状。</li>
+                            <li>猜一猜：电脑花了多少数据才拼出这个三维地球？</li>
+                        </ul>
+                    </article>
+                    <article class="card note">
+                        <h3>小知识</h3>
+                        <p>
+                            Google Earth 使用卫星照片 + AI 识别山脉、道路、建筑，再用 GPU 秒级渲染。1
+                            分钟内它可以完成上亿次数学计算，就像给地球“穿上一层高清外衣”。
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="coding" class="section coding">
+                <div class="section-heading">
+                    <p class="eyebrow">第四部分 · 编程游乐园</p>
+                    <h2>Scratch + 弹跳球：电脑只会照做你写的“指令”</h2>
+                    <p>顺序、判断、循环就是程序的三块积木。掌握它们，你就能让小猫跳舞、让小球弹跳、让故事动起来。</p>
+                </div>
+                <div class="coding-grid">
+                    <article class="card code-card">
+                        <div class="chip">顺序 Sequence</div>
+                        <h3>一步步执行</h3>
+                        <p>像做三明治：拿面包 → 放火腿 → 盖上。换顺序就失败。</p>
+                        <pre>
+说 "你好" 1 秒
+走 10 步
+转动 15 度
+                        </pre>
+                    </article>
+                    <article class="card code-card">
+                        <div class="chip">判断 Selection</div>
+                        <h3>遇事要思考</h3>
+                        <p>电脑会根据条件做不同动作：“如果碰到边缘就转身，否则继续走”。</p>
+                        <pre>
+如果 碰到边缘 那么
+    转向 180 度
+否则
+    继续前进
+                        </pre>
+                    </article>
+                    <article class="card code-card">
+                        <div class="chip">循环 Loop</div>
+                        <h3>重复不累</h3>
+                        <p>练习拍手 10 次，用循环最省事。电脑也喜欢这样的“偷懒”。</p>
+                        <pre>
+重复 10 次
+    走 10 步
+    转 15 度
+                        </pre>
+                    </article>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card accent">
+                        <h3>Scratch 小挑战</h3>
+                        <ol>
+                            <li>拖动“向前走 10 步”+“说‘你好’”搭建一段顺序。</li>
+                            <li>加一个“如果碰到边缘就弹跳”的判断。</li>
+                            <li>用“重复 10 次”让小猫旋转跳舞，再配上音效。</li>
+                        </ol>
+                    </article>
+                    <article class="card note">
+                        <h3>身体当程序</h3>
+                        <ul>
+                            <li><strong>顺序：</strong>先拍手再跺脚。</li>
+                            <li><strong>判断：</strong>如果你是男生就举手，否则拍手。</li>
+                            <li><strong>循环：</strong>一起喊“跳”5 次。</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>弹跳球 (Jumping Ball)</h3>
+                        <p>
+                            访问
+                            <a href="https://jasoft.github.io/jumpingball/" target="_blank" rel="noopener noreferrer"
+                                >jumpingball</a
+                            >
+                            看看“重力 +
+                            速度”怎么被程序控制。按键时小球立刻响应，说明电脑根本不会偷懒，它在每一帧重新计算位置。
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="ai-hub" class="section ai-hub">
+                <div class="section-heading">
+                    <p class="eyebrow">第五部分 · AI 小百科</p>
+                    <h2>让电脑“自己学会”东西，AI 到底怎么做到？</h2>
+                    <p>AI 就像学习超快的学生。我们给它很多例子，它自己找规律，然后变得会“看、听、说、想”。</p>
+                </div>
+                <div class="ai-grid">
+                    <article class="card">
+                        <h3>AI 是什么？</h3>
+                        <ul>
+                            <li>Artificial Intelligence = 人工智能，让电脑具备“感知 + 思考 + 行动”。</li>
+                            <li>聪明不是魔法，而是来自大量数据的学习。</li>
+                            <li>生活中的例子：语音助手、扫地机器人、推荐歌曲的 App、翻译软件。</li>
+                        </ul>
+                    </article>
+                    <article class="card accent">
+                        <h3>深度学习怎么学猫？</h3>
+                        <p>
+                            第 1 层看线条，第 2 层看耳朵形状，第 3 层看胡须和毛发……一层层叠起来，就像高层蛋糕，所以叫
+                            Deep Learning。
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>AI 画画的秘密</h3>
+                        <ol>
+                            <li><strong>学习阶段：</strong>看几千万张“猫”“海边”“宇航员”的组合图。</li>
+                            <li>
+                                <strong>生成阶段：</strong
+                                >你输入“穿太空服的猫”，它把学过的形状和颜色重新组合，创造全新画面。
+                            </li>
+                        </ol>
+                        <p class="fun-fact">小知识：AI 其实没有想象力，它是在计算“最像”的样子。</p>
+                    </article>
+                </div>
+                <div class="flow">
+                    <div class="chip">AI 学习流程</div>
+                    <ol class="flow-steps">
+                        <li>📸 输入大量样本（猫、狗、动作、声音）。</li>
+                        <li>🧠 电脑在神经网络里反复比较、总结模式。</li>
+                        <li>🎯 输出：看到新图片时，用“最像谁”来做判断。</li>
+                    </ol>
+                </div>
+                <div class="fact-stack">
+                    <article class="card mini">
+                        <h3>准确率升级</h3>
+                        <p>图像识别从 2012 年的 75% 提升到 2024 年的 95%+，已经逼近甚至超过人类。</p>
+                    </article>
+                    <article class="card mini">
+                        <h3>联网规模</h3>
+                        <p>1989 年全球不到 1000 人上网，如今超过 50 亿人。AI 每天都在“吃”来自全世界的数据。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="lab" class="section lab highlight">
+                <div class="section-heading">
+                    <p class="eyebrow">第六-八部分 · 现场实验</p>
+                    <h2>动手 + 动嘴 + 鼓掌，AI 就会回应</h2>
+                    <p>下面这些实验全部可以现场操作，点击卡片即可打开所需网站，再按照步骤完成挑战。</p>
+                </div>
+                <div class="demo-grid">
+                    <article class="demo-card">
+                        <div>
+                            <h3>Quick Draw!</h3>
+                            <p>AI 在 20 秒内猜你画的是什么，它靠的是“见多识广”的模式识别本领。</p>
+                            <ul class="checklist">
+                                <li>进入网站，选择中文提示。</li>
+                                <li>请 1-2 位同学轮流画画。</li>
+                                <li>大声读出“我猜你画的是……”的提示。</li>
+                            </ul>
+                            <p class="fun-fact">乐趣加分：全世界玩家画过 5 千万张图，AI 画库越大就越聪明。</p>
+                        </div>
+                        <a
+                            class="btn pill"
+                            href="https://quickdraw.withgoogle.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >开始猜画</a
+                        >
+                    </article>
+                    <article class="demo-card">
+                        <div>
+                            <h3>Teachable Machine</h3>
+                            <p>1 分钟内训练一个识别“举手/低头”的模型，让同学亲眼看见“数据 → 学习 → 判断”。</p>
+                            <ul class="checklist">
+                                <li>创建两个类别，拍摄多张照片。</li>
+                                <li>点击 Train 几秒钟完成学习。</li>
+                                <li>让同学轮流做动作，观察概率条。</li>
+                            </ul>
+                            <p class="fun-fact">提示：光线越均匀、背景越干净，AI 学得越好。</p>
+                        </div>
+                        <a
+                            class="btn pill"
+                            href="https://teachablemachine.withgoogle.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >立刻训练</a
+                        >
+                    </article>
+                    <article class="demo-card">
+                        <div>
+                            <h3>鼓掌跳跑者</h3>
+                            <p>
+                                访问 <code>jasoft.github.io/claprun/</code>，掌声越大，角色跑得越快——声音也能成为指令！
+                            </p>
+                            <ul class="checklist">
+                                <li>左右两组轮流鼓掌 PK。</li>
+                                <li>观察角色速度条的变化。</li>
+                                <li>全班大合奏，触发“狂奔模式”。</li>
+                            </ul>
+                            <p class="fun-fact">声音波形会被转成数字，AI 根据能量值决定速度。</p>
+                        </div>
+                        <a
+                            class="btn pill"
+                            href="https://jasoft.github.io/claprun/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >掌声走起</a
+                        >
+                    </article>
+                    <article class="demo-card">
+                        <div>
+                            <h3>声音克隆实验</h3>
+                            <p>在 Minimax 的 voice cloning 页面读几句话，AI 会用你的声音朗读别的内容。</p>
+                            <ul class="checklist">
+                                <li>录制 10-15 秒的清晰语音。</li>
+                                <li>输入想让它说的文字。</li>
+                                <li>播放对比，找出和原声的不一样之处。</li>
+                            </ul>
+                            <p class="fun-fact">
+                                AI 通过学习声纹（pitch + timbre）来复制声音，但情绪仍需我们自己表演。
+                            </p>
+                        </div>
+                        <a
+                            class="btn pill"
+                            href="https://www.minimax.io/audio/voices-cloning"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >立刻试听</a
+                        >
+                    </article>
+                    <article class="demo-card">
+                        <div>
+                            <h3>Scratch 小剧场</h3>
+                            <p>拖动积木让小猫开演唱会：顺序→判断→循环，现场编写小剧本。</p>
+                            <ul class="checklist">
+                                <li>设置舞台背景与角色造型。</li>
+                                <li>添加“当绿旗被点击”事件。</li>
+                                <li>用循环让小猫跳舞，加入“说话”气泡。</li>
+                            </ul>
+                            <p class="fun-fact">Scratch 的每个积木都可以理解为一条英文句子，组合越多故事越精彩。</p>
+                        </div>
+                        <a class="btn pill" href="https://scratch.mit.edu" target="_blank" rel="noopener noreferrer"
+                            >立即创作</a
+                        >
+                    </article>
+                    <article class="demo-card">
+                        <div>
+                            <h3>Google Earth 快速通道</h3>
+                            <p>再飞一次地球，验证“电脑不会猜、只会照做”：输入什么地点，它就去哪里。</p>
+                            <ul class="checklist">
+                                <li>输入教室/家乡，体验即时缩放。</li>
+                                <li>切换 3D 视角，观察建筑阴影。</li>
+                                <li>用尺子工具量一下珠穆朗玛峰的高度。</li>
+                            </ul>
+                            <p class="fun-fact">
+                                如果把地球表面照片打印成纸，需要 1000 万张 A4 纸 —— AI 帮我们节省了整个图书馆的空间。
+                            </p>
+                        </div>
+                        <a
+                            class="btn pill"
+                            href="https://earth.google.com/web"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >起飞</a
+                        >
+                    </article>
+                </div>
+            </section>
+
+            <section id="imagination" class="section imagination">
+                <div class="section-heading">
+                    <p class="eyebrow">第九部分 · 想象实验室</p>
+                    <h2>写下你的“未来电脑”设计书</h2>
                     <p>
-                        中国算盘是我们祖先发明的伟大计算工具！大约在1200年左右，中国人就开始使用算盘来帮助计算。它就像一个古老的计算器，非常聪明！
+                        快速回答下面几个问题，或者把它们抄在纸上画出来。课堂结束时，我们会把它们收集起来，贴在“AI
+                        灵感墙”上。
                     </p>
                 </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <span class="year">1804年</span>
-                    <h2>雅卡尔织布机 (Jacquard Loom)</h2>
-                    <img src="images/jacquard_loom.jpg" alt="雅卡尔织布机" />
-                    <p>这台神奇的机器使用打了孔的卡片来编织美丽的花纹。这是最早的“编程”思想之一，告诉机器该做什么。</p>
+                <div class="card-grid three">
+                    <article class="card">
+                        <h3>如果我拥有一台超级计算机…</h3>
+                        <p>它会帮我完成什么任务？我会给它起什么名字？</p>
+                        <ul>
+                            <li>想象它的外形、颜色或坐骑。</li>
+                            <li>它的座右铭是什么？</li>
+                        </ul>
+                    </article>
+                    <article class="card note">
+                        <h3>我想教电脑的一件事</h3>
+                        <p>“如果我能教电脑一件事，我想教它 ________。”</p>
+                        <p>填空时尽量具体，比如“教它帮我写 rap 歌词”。</p>
+                    </article>
+                    <article class="card accent">
+                        <h3>我最爱的一次演示</h3>
+                        <p>
+                            从 Google Earth / Jumping Ball / Quick Draw! / Teachable Machine / 鼓掌跳跑者 /
+                            声音克隆里选一个你最喜欢的，写下原因。
+                        </p>
+                    </article>
                 </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                    <span class="year">1946年</span>
-                    <h2>ENIAC</h2>
-                    <img src="images/eniac.jpg" alt="ENIAC" />
-                    <p>这是世界上第一台电子计算机，它非常非常大，有一个房间那么大！它开启了电脑的时代。</p>
+                <div class="cta-panel">
+                    <p>准备好了吗？大声喊出我们的口号：</p>
+                    <h3>“让想象力，变成计算机能听懂的语言！”</h3>
                 </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <span class="year">1947年</span>
-                    <h2>晶体管 (Transistor)</h2>
-                    <img src="images/transistor.jpg" alt="晶体管" />
-                    <p>这个小小的东西叫做晶体管，它的发明让电脑变得越来越小，越来越快。</p>
-                </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                    <span class="year">1981年</span>
-                    <h2>IBM 个人电脑 (IBM PC)</h2>
-                    <img src="images/ibm_pc.jpg" alt="IBM 个人电脑" />
-                    <p>从这台电脑开始，电脑开始走进千家万户，人们可以在家里用它来学习和工作。</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <span class="year">2008年</span>
-                    <h2>轻薄笔记本 (MacBook Air)</h2>
-                    <img src="images/macbook.jpg" alt="MacBook轻薄笔记本" />
-                    <p>
-                        电脑变得越来越轻薄了！MacBook
-                        Air就像一本书一样薄，可以轻松放进书包里，随时随地使用。电脑从笨重的大盒子变成了便携的小伙伴！
-                    </p>
-                </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                    <span class="year">现在</span>
-                    <h2>智能手机 (Smartphone)</h2>
-                    <img src="images/smartphone.jpg" alt="智能手机" />
-                    <p>现在，电脑已经可以放进我们的口袋里了！智能手机就是一台功能强大的迷你电脑。</p>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
 
         <footer>
-            <p>给四年级小朋友的礼物</p>
+            <p>© 2025 计算机小冒险 · 与同学一起探索编程与 AI</p>
         </footer>
 
-        <!-- 图片全屏查看器 -->
         <div class="image-modal" id="imageModal">
-            <div class="close-hint">点击任意位置关闭</div>
+            <div class="close-hint">点击任意位置关闭大图</div>
             <img id="modalImage" src="" alt="放大图片" />
         </div>
 
         <script>
-            // 图片点击放大功能
-            const modal = document.getElementById("imageModal")
-            const modalImg = document.getElementById("modalImage")
-            const images = document.querySelectorAll(".content img")
+            const navToggle = document.querySelector(".nav-toggle")
+            const navLinks = document.querySelector(".nav-links")
+            navToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("open")
+            })
+            navLinks.addEventListener("click", (event) => {
+                if (event.target.tagName === "A") {
+                    navLinks.classList.remove("open")
+                }
+            })
 
-            // 为每张图片添加点击事件
-            images.forEach((img) => {
-                img.addEventListener("click", function () {
+            const modal = document.getElementById("imageModal")
+            const modalImage = document.getElementById("modalImage")
+            const historyCards = document.querySelectorAll(".history-card")
+
+            historyCards.forEach((card) => {
+                card.addEventListener("click", () => {
+                    const imgSrc = card.dataset.fullImage
+                    if (!imgSrc) return
+                    modalImage.src = imgSrc
                     modal.classList.add("active")
-                    modalImg.src = this.src
-                    modalImg.alt = this.alt
-                    document.body.style.overflow = "hidden" // 防止背景滚动
+                    document.body.style.overflow = "hidden"
                 })
             })
 
-            // 点击模态框关闭
-            modal.addEventListener("click", function () {
+            modal.addEventListener("click", () => {
                 modal.classList.remove("active")
-                document.body.style.overflow = "auto" // 恢复滚动
+                document.body.style.overflow = "auto"
+                modalImage.src = ""
             })
 
-            // ESC键关闭
-            document.addEventListener("keydown", function (e) {
-                if (e.key === "Escape" && modal.classList.contains("active")) {
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && modal.classList.contains("active")) {
                     modal.classList.remove("active")
                     document.body.style.overflow = "auto"
+                    modalImage.src = ""
                 }
             })
         </script>

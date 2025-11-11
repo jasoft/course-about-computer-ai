@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>你好，计算机！课堂演示站</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="hero" id="home">
+            <nav class="site-nav">
+                <div class="logo">你好，计算机！</div>
+                <button class="nav-toggle" aria-label="展开导航">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#intro">开场</a></li>
+                    <li><a href="#history">历史</a></li>
+                    <li><a href="#earth">Google&nbsp;Earth</a></li>
+                    <li><a href="#scratch">Scratch</a></li>
+                    <li><a href="#ai">AI 概念</a></li>
+                    <li><a href="#quickdraw">Quick Draw!</a></li>
+                    <li><a href="#teachable">Teachable Machine</a></li>
+                    <li><a href="#dance">鼓掌跳舞</a></li>
+                    <li><a href="#summary">总结</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <p class="eyebrow">四年级 · 25–30 分钟 · 现场互动讲座</p>
+                <h1>《你好，计算机！》课堂演示站</h1>
+                <p class="lead">
+                    一份可现场播放的全流程演示网站：按照节奏展开讲稿、互动提问、教师提示与演示链接，让学生像冒险一样认识计算机、编程与人工智能。
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#schedule">查看课堂节奏</a>
+                    <a class="btn ghost" href="#resources">打开演示工具</a>
+                </div>
+                <div class="hero-stats">
+                    <article>
+                        <p class="stat-number">3</p>
+                        <p class="stat-label">计算机魔法：快·听话·会学习</p>
+                    </article>
+                    <article>
+                        <p class="stat-number">5</p>
+                        <p class="stat-label">互动环节</p>
+                    </article>
+                    <article>
+                        <p class="stat-number">8</p>
+                        <p class="stat-label">板块逐一展开</p>
+                    </article>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="overview" class="section highlight">
+                <div class="section-heading">
+                    <p class="eyebrow">课堂目标</p>
+                    <h2>把抽象概念变成孩子看得见的体验</h2>
+                    <p>用故事开启、用演示佐证、用互动收口，让孩子对编程与人工智能留下 “我也可以” 的第一印象。</p>
+                </div>
+                <div class="card-grid four">
+                    <article class="card">
+                        <h3>认识计算机</h3>
+                        <p>让学生知道“计算机无处不在，会记、算、想、做”。</p>
+                        <ul>
+                            <li>生活中的计算机</li>
+                            <li>它会不会生气？</li>
+                            <li>AI 伙伴大点名</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>历史与想象力</h3>
+                        <p>用 ENIAC 对比手机、储存和速度故事唤起惊叹。</p>
+                        <ul>
+                            <li>ENIAC vs iPhone</li>
+                            <li>存储/速度/互联网</li>
+                            <li>20 年后的电脑?</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>编程思维</h3>
+                        <p>通过 Scratch 玩转顺序、判断、循环，把逻辑变成动作。</p>
+                        <ul>
+                            <li>积木=指令</li>
+                            <li>程序三结构</li>
+                            <li>身体力行小游戏</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>AI 初体验</h3>
+                        <p>Quick Draw + Teachable Machine + 鼓掌跳舞，展示 AI 如何学会识别并反向驱动创作。</p>
+                        <ul>
+                            <li>AI 猜画</li>
+                            <li>AI 自己学</li>
+                            <li>声音驱动表演</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="resources" class="section resources">
+                <div class="section-heading">
+                    <p class="eyebrow">演示工具面板</p>
+                    <h2>一键进入需要打开的网站 / 文件</h2>
+                    <p>提前全部预加载，现场点击即可切换。推荐使用浏览器新标签页打开以免打断投屏。</p>
+                </div>
+                <div class="resource-grid">
+                    <article class="resource-card">
+                        <div>
+                            <h3>Google Earth Web</h3>
+                            <p>用几秒钟“飞”到珠穆朗玛峰或学校，体验计算机的速度与三维地图能力。</p>
+                            <p class="resource-meta">亮点：速度、海量数据、3D 地球</p>
+                        </div>
+                        <a class="btn pill" href="https://earth.google.com/web" target="_blank" rel="noopener noreferrer">立即打开</a>
+                    </article>
+                    <article class="resource-card">
+                        <div>
+                            <h3>Scratch 在线版</h3>
+                            <p>拖动积木让小猫行动，演示顺序 / 判断 / 循环与事件触发。</p>
+                            <p class="resource-meta">亮点：孩子可上台操作</p>
+                        </div>
+                        <a class="btn pill" href="https://scratch.mit.edu" target="_blank" rel="noopener noreferrer">立即打开</a>
+                    </article>
+                    <article class="resource-card">
+                        <div>
+                            <h3>Quick, Draw!</h3>
+                            <p>Google 的 AI 画猜小游戏，最好提前选好中文提示词。</p>
+                            <p class="resource-meta">亮点：AI 猜画 + 全班欢呼</p>
+                        </div>
+                        <a class="btn pill" href="https://quickdraw.withgoogle.com" target="_blank" rel="noopener noreferrer">立即打开</a>
+                    </article>
+                    <article class="resource-card">
+                        <div>
+                            <h3>Teachable Machine</h3>
+                            <p>拍摄举手 / 低头等动作，几秒内训练出自己的分类模型。</p>
+                            <p class="resource-meta">亮点：AI 需要人来教</p>
+                        </div>
+                        <a class="btn pill" href="https://teachablemachine.withgoogle.com" target="_blank" rel="noopener noreferrer">立即打开</a>
+                    </article>
+                    <article class="resource-card">
+                        <div>
+                            <h3>鼓掌跳舞小游戏</h3>
+                            <p>基于声音识别的压轴节目，鼓掌越快角色跳得越快。请提前在本机打开项目文件。</p>
+                            <p class="resource-meta">提示：测试麦克风灵敏度</p>
+                        </div>
+                        <a class="btn pill secondary" href="#dance">查看讲解页</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="schedule" class="section">
+                <div class="section-heading">
+                    <p class="eyebrow">课堂节奏总览</p>
+                    <h2>25–30 分钟的分段安排</h2>
+                    <p>按照时间顺序点击即可跳转到对应板块。滚动时会自动高亮当前环节。</p>
+                </div>
+                <div class="schedule">
+                    <article class="schedule-item" data-target="intro">
+                        <p class="schedule-time">3’</p>
+                        <h3>第一部分：开场与导入</h3>
+                        <p>用生活中的计算机拉近距离，抛出问题激发好奇。</p>
+                    </article>
+                    <article class="schedule-item" data-target="history">
+                        <p class="schedule-time">5’</p>
+                        <h3>第二部分：计算机的历史故事</h3>
+                        <p>ENIAC 到智能手机，配合惊奇数据建立“飞速进化”的概念。</p>
+                    </article>
+                    <article class="schedule-item" data-target="earth">
+                        <p class="schedule-time">5’</p>
+                        <h3>第三部分：Google Earth</h3>
+                        <p>体验计算机的速度与数据处理能力。</p>
+                    </article>
+                    <article class="schedule-item" data-target="scratch">
+                        <p class="schedule-time">5’</p>
+                        <h3>第四部分：Scratch 编程</h3>
+                        <p>顺序 / 判断 / 循环三件套 + 小朋友当程序。</p>
+                    </article>
+                    <article class="schedule-item" data-target="ai">
+                        <p class="schedule-time">3’</p>
+                        <h3>第五部分：AI 是什么</h3>
+                        <p>用类比与深度学习小故事拆解 AI 的“学习”机制。</p>
+                    </article>
+                    <article class="schedule-item" data-target="quickdraw">
+                        <p class="schedule-time">5’</p>
+                        <h3>第六部分：Quick Draw!</h3>
+                        <p>现场猜画，让孩子看到 AI 的模式识别。</p>
+                    </article>
+                    <article class="schedule-item" data-target="teachable">
+                        <p class="schedule-time">5’</p>
+                        <h3>第七部分：Teachable Machine</h3>
+                        <p>学生亲自教 AI，强化“AI 需要数据”的概念。</p>
+                    </article>
+                    <article class="schedule-item" data-target="dance">
+                        <p class="schedule-time">5’</p>
+                        <h3>第八部分：鼓掌让角色跳舞</h3>
+                        <p>声音识别 + 编程，让课堂达到高潮。</p>
+                    </article>
+                    <article class="schedule-item" data-target="summary">
+                        <p class="schedule-time">2’</p>
+                        <h3>第九部分：总结与展望</h3>
+                        <p>回扣“三个魔法”并布置延伸活动。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="intro" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第一部分 · 3分钟</p>
+                    <h2>开场与导入：认识特别的朋友——计算机</h2>
+                    <p>用幽默与提问让学生意识到“计算机无处不在，而且会记、算、想、做”。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>讲稿关键句</h3>
+                        <ul>
+                            <li>计算机能做作业、看地图、画画、写故事。</li>
+                            <li>我们要探索：它从哪里来？人怎么教它？它会跳舞吗？</li>
+                            <li>“让想象力，变成计算机能听懂的语言！”</li>
+                        </ul>
+                    </article>
+                    <article class="card accent">
+                        <h3>互动提问</h3>
+                        <ul>
+                            <li>家里有哪些计算机？（手机、平板、电视、手表）</li>
+                            <li>计算机会不会生气？</li>
+                            <li>见过哪些 AI？Siri、ChatGPT、扫地机器人…</li>
+                        </ul>
+                    </article>
+                    <article class="card note">
+                        <h3>教师提示</h3>
+                        <p>举起随身设备，让学生判断“这算不算计算机”。用夸张语气拉近距离。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="history" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第二部分 · 5分钟</p>
+                    <h2>计算机的历史故事：从房间到掌心</h2>
+                    <p>用对比图和数字展示“技术进步 + 人类智慧”，激发孩子畅想未来。</p>
+                </div>
+                <div class="history-gallery">
+                    <article class="history-card">
+                        <img src="images/eniac.jpg" alt="ENIAC" />
+                        <div>
+                            <h3>ENIAC · 1946</h3>
+                            <p>房间大小的第一台电子计算机，需要几千根电线。</p>
+                        </div>
+                    </article>
+                    <article class="history-card">
+                        <img src="images/ibm_pc.jpg" alt="IBM PC" />
+                        <div>
+                            <h3>IBM PC · 1981</h3>
+                            <p>电脑走进家庭，办公与学习方式被改变。</p>
+                        </div>
+                    </article>
+                    <article class="history-card">
+                        <img src="images/macbook.jpg" alt="轻薄笔记本" />
+                        <div>
+                            <h3>轻薄本 · 2008</h3>
+                            <p>一本书的厚度，随时随地带着走。</p>
+                        </div>
+                    </article>
+                    <article class="history-card">
+                        <img src="images/smartphone.jpg" alt="智能手机" />
+                        <div>
+                            <h3>智能手机 · 现在</h3>
+                            <p>口袋里的超级电脑，比 ENIAC 快数百万倍。</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="fact-grid">
+                    <article class="card mini">
+                        <h3>令人惊奇的事实</h3>
+                        <ul>
+                            <li>1956 年 1 吨重的硬盘只能存 5MB；指甲盖大小的卡可存 128GB。</li>
+                            <li>手机性能超越阿波罗登月所有计算机之和。</li>
+                            <li>1989 年全球不足 1000 人上网，如今超过 50 亿。</li>
+                            <li>图像识别准确率：2012 年 75% → 2024 年 95%+</li>
+                        </ul>
+                    </article>
+                    <article class="card mini">
+                        <h3>与学生互动</h3>
+                        <ul>
+                            <li>为什么电脑越来越小？</li>
+                            <li>20 年后电脑会变成什么？</li>
+                        </ul>
+                        <p>鼓励孩子画出“未来电脑”。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="earth" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第三部分 · 5分钟</p>
+                    <h2>Google Earth：感受计算机的速度与想象力</h2>
+                    <p>让学生点名目的地，几秒钟内“飞过去”，突出实时渲染与数据处理。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>演示步骤</h3>
+                        <ol>
+                            <li>提前加载 earth.google.com。</li>
+                            <li>旋转 3D 地球，说明“这不是视频，而是电脑即时计算”。</li>
+                            <li>让学生喊地点，逐一飞行。</li>
+                        </ol>
+                    </article>
+                    <article class="card accent">
+                        <h3>互动提问</h3>
+                        <ul>
+                            <li>谁想去哪里？（珠峰 / 金字塔 / 我们学校）</li>
+                            <li>为什么电脑能这么快找到？</li>
+                        </ul>
+                    </article>
+                    <article class="card note">
+                        <h3>讲解重点</h3>
+                        <p>AI 帮助地图识别山脉与建筑；几秒钟处理全球海量数据=计算机“超级快”的第一魔法。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="scratch" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第四部分 · 5分钟</p>
+                    <h2>Scratch 编程：让电脑听我们的指令</h2>
+                    <p>通过积木脚本解释程序三大结构，并让学生当场操作。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>课堂流程</h3>
+                        <ul>
+                            <li>展示 Scratch 界面，拖动“向前走 10 步”“说你好”。</li>
+                            <li>邀请 1 名学生让小猫跳或说话。</li>
+                            <li>加入音效增强现场感。</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>程序三结构</h3>
+                        <div class="mini-grid">
+                            <div>
+                                <h4>顺序</h4>
+                                <p>像做三明治，按步骤执行。</p>
+                            </div>
+                            <div>
+                                <h4>判断</h4>
+                                <p>遇到条件做选择：如果碰到边缘就转向。</p>
+                            </div>
+                            <div>
+                                <h4>循环</h4>
+                                <p>重复做事：拍手 10 次 / 转圈动画。</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card note">
+                        <h3>身体力行小游戏</h3>
+                        <p>让学生“当程序”：</p>
+                        <ul>
+                            <li>顺序：先拍手再跺脚。</li>
+                            <li>判断：如果是男生举手，否则拍手。</li>
+                            <li>循环：拍手 5 次！</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="ai" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第五部分 · 3分钟</p>
+                    <h2>AI 是什么：让电脑自己学会东西</h2>
+                    <p>用“学习超快的学生”类比，解释机器学习与深度学习。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>核心要点</h3>
+                        <ul>
+                            <li>AI = 让计算机“看、听、说、想”。</li>
+                            <li>聪明来自大量例子与数据。</li>
+                            <li>机器学习：从数据找规律；深度学习：多层神经网络。</li>
+                        </ul>
+                    </article>
+                    <article class="card accent">
+                        <h3>深度学习小故事</h3>
+                        <p>“AI 认猫” 的层层分析：线条 → 耳朵 → 胡须 → 猫。像蛋糕一样多层。</p>
+                    </article>
+                    <article class="card note">
+                        <h3>互动提问</h3>
+                        <ul>
+                            <li>AI 聪明吗？会有感情吗？</li>
+                            <li>它出现在哪里？（语音助手、扫地机、推荐）</li>
+                            <li>如果让 AI 画“披萨味的电脑”会发生什么？</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="quickdraw" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第六部分 · 5分钟</p>
+                    <h2>Quick Draw!：AI 的快速识别</h2>
+                    <p>通过 AI 猜画游戏展示“模式识别”，让学生体会机器学习的乐趣。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>操作建议</h3>
+                        <ol>
+                            <li>提前打开网站并切换到中文提示。</li>
+                            <li>邀请 1–2 名学生上前画画。</li>
+                            <li>读出 AI 实时猜测：“我猜你画的是…”</li>
+                        </ol>
+                    </article>
+                    <article class="card accent">
+                        <h3>讲解关键句</h3>
+                        <p>“AI 不是看懂，而是猜最像的结果。”</p>
+                        <p>“它学过上百万幅图，所以猜得又快又准。”</p>
+                    </article>
+                    <article class="card note">
+                        <h3>教师提示</h3>
+                        <p>控制在两轮以内，留悬念给后续的 Teachable Machine。鼓励全班一起猜。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="teachable" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第七部分 · 5分钟</p>
+                    <h2>Teachable Machine：轮到我们教电脑</h2>
+                    <p>让学生看到“数据 → 训练 → 识别”的完整流程。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>演示步骤</h3>
+                        <ol>
+                            <li>选择图像项目，建立“举手 / 低头”两个类别。</li>
+                            <li>拍摄多张照片（注意光线与背景）。</li>
+                            <li>点击训练，几秒内得到模型。</li>
+                            <li>实时测试，显示概率条。</li>
+                        </ol>
+                    </article>
+                    <article class="card accent">
+                        <h3>互动方式</h3>
+                        <ul>
+                            <li>请 3 位学生轮流做动作。</li>
+                            <li>让大家预测“这次会猜对吗？”</li>
+                            <li>强调：AI 是我们教出来的。</li>
+                        </ul>
+                    </article>
+                    <article class="card note">
+                        <h3>讲解重点</h3>
+                        <p>机器学习=通过数据自己总结规律；AI 可以识别图像、声音、动作；需要好数据 + 好老师。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="dance" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第八部分 · 5分钟</p>
+                    <h2>鼓掌让角色跳舞：声音也能被 AI 听懂</h2>
+                    <p>压轴互动，把声音识别与编程结合，点燃课堂气氛。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>环节设计</h3>
+                        <ul>
+                            <li>介绍：鼓掌越快，小人跳得越快。</li>
+                            <li>分左右两组 PK，最后全班大合奏。</li>
+                            <li>配上夸张解说：“掌声再大一点！”</li>
+                        </ul>
+                    </article>
+                    <article class="card accent">
+                        <h3>技术亮点</h3>
+                        <p>声音 → AI 识别 → 变量（鼓掌强度） → 动画速度。</p>
+                        <p>向学生说明：声音也能成为数据，编程 + AI 可以创造互动体验。</p>
+                    </article>
+                    <article class="card note">
+                        <h3>教师提示</h3>
+                        <p>提前测试麦克风与音量阈值。若现场噪声大，可用拍手器或桌面敲击替代。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="summary" class="section lesson" data-track>
+                <div class="section-heading">
+                    <p class="eyebrow">第九部分 · 2分钟</p>
+                    <h2>结尾总结与延伸</h2>
+                    <p>回顾“三个魔法”，发出口号，让孩子带着任务离开教室。</p>
+                </div>
+                <div class="lesson-grid">
+                    <article class="card">
+                        <h3>回扣三个魔法</h3>
+                        <ul>
+                            <li>超级快：Google Earth。</li>
+                            <li>听指令：Scratch 与程序结构。</li>
+                            <li>会学习：AI + Teachable Machine。</li>
+                        </ul>
+                        <p class="quote">“让想象力，变成计算机能听懂的语言！”</p>
+                    </article>
+                    <article class="card accent">
+                        <h3>延伸活动</h3>
+                        <ul>
+                            <li>画出“未来电脑”。</li>
+                            <li>完成句子：“如果我能教电脑一件事，我想教它__________。”</li>
+                        </ul>
+                    </article>
+                    <article class="card note">
+                        <h3>下一步建议</h3>
+                        <p>把学生作品拍照或贴在教室 AI 角；整理问答作为下次课程的素材。</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 《你好，计算机！》讲座 · 教师伴随式演示站</p>
+        </footer>
+
+        <script>
+            const navToggle = document.querySelector(".nav-toggle")
+            const navLinks = document.querySelector(".nav-links")
+            navToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("open")
+            })
+            navLinks.addEventListener("click", (event) => {
+                if (event.target.tagName === "A") {
+                    navLinks.classList.remove("open")
+                }
+            })
+
+            const trackedSections = document.querySelectorAll("section[data-track]")
+            const navAnchors = document.querySelectorAll(".nav-links a")
+            const scheduleItems = document.querySelectorAll(".schedule-item")
+
+            const setActive = (id) => {
+                navAnchors.forEach((link) => {
+                    const match = link.getAttribute("href") === `#${id}`
+                    link.classList.toggle("active", match)
+                })
+                scheduleItems.forEach((item) => {
+                    const match = item.dataset.target === id
+                    item.classList.toggle("active", match)
+                })
+            }
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            setActive(entry.target.id)
+                        }
+                    })
+                },
+                {
+                    threshold: 0.4,
+                }
+            )
+
+            trackedSections.forEach((section) => observer.observe(section))
+        </script>
+    </body>
+</html>
